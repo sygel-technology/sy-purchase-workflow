@@ -1,2 +1,12 @@
 # sy-purchase-workflow
 Odoo Purchases, Workflow and Organization
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | summary
+--- | --- | ---
+[](/) | 14.0.1.0.0 | .
+
+[//]: # (end addons)
