@@ -8,8 +8,10 @@ class ProductProduct(models.Model):
     _inherit = "product.product"
 
     def name_get(self):
-        if self.env.company.internal_ref_product or (
-                "default_description_sale" in self.env.context):
+        if not self.env.context.get("avoid_internal_name") and (
+            self.env.company.internal_ref_product or 
+            "default_description_sale" in self.env.context
+        ):
             ctx = self.env.context.copy()
             ctx.update({'partner_id': False})
             result = super(ProductProduct, self.with_context(ctx)).name_get()
