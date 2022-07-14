@@ -7,6 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[purchase_internal_product_reference](purchase_internal_product_reference/) | 14.0.1.0.0 | Shows the internal product reference or the supplier's reference in purchasing.
+[stock_rule_mto_vendor_purchase_type](stock_rule_mto_vendor_purchase_type/) | 12.0.1.0.0 | Purchase order type from vendor in POs from stock rule or MTO.
 
 [//]: # (end addons)
