@@ -9,11 +9,11 @@ class ProductProduct(models.Model):
 
     def name_get(self):
         if not self.env.context.get("avoid_internal_name") and (
-            self.env.company.internal_ref_product or 
-            "default_description_sale" in self.env.context
+            self.env.company.internal_ref_product
+            or "default_description_sale" in self.env.context
         ):
             ctx = self.env.context.copy()
-            ctx.update({'partner_id': False})
+            ctx.update({"partner_id": False})
             result = super(ProductProduct, self.with_context(ctx)).name_get()
         else:
             result = super().name_get()

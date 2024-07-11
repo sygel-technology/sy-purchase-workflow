@@ -9,8 +9,6 @@ class PurchaseOrderLine(models.Model):
 
     def _get_product_purchase_description(self, product_lang):
         self.ensure_one()
-        return super(
-                PurchaseOrderLine, self
-            )._get_product_purchase_description(
+        return super(PurchaseOrderLine, self)._get_product_purchase_description(
             product_lang.with_context(avoid_internal_name=True)
         )
