@@ -6,7 +6,7 @@
     "summary": "Purchase order type from vendor in POs from stock rule or MTO.",
     "version": "12.0.1.0.0",
     "category": "Stock",
-    "website": "https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-purchase-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
