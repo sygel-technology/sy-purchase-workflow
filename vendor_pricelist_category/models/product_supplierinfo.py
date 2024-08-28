@@ -14,7 +14,6 @@ class ProductSupplierinfo(models.Model):
         domain="[('partner_id', '=', partner_id)]",
     )
     use_category_discount = fields.Boolean(
-        string="Use Category Discount",
         related="product_supplierinfo_category_id.use_discount_in_supplierinfo",
     )
 
@@ -25,9 +24,10 @@ class ProductSupplierinfo(models.Model):
         "product_supplierinfo_category_id.discount",
     )
     def _compute_discount(self):
-        super()._compute_discount()
+        ret_val = super()._compute_discount()
         for sel in self.filtered(
             lambda a: a.product_supplierinfo_category_id
             and a.product_supplierinfo_category_id.use_discount_in_supplierinfo
         ):
             sel.discount = sel.product_supplierinfo_category_id.discount
+        return ret_val

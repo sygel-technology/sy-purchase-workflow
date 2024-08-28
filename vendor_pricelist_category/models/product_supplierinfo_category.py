@@ -14,10 +14,9 @@ class ProductSupplierinfoCategory(models.Model):
     _rec_name = "complete_name"
     _order = "complete_name"
 
-    name = fields.Char(string="Name", required=True)
-    code = fields.Char(string="Code", required=True)
+    name = fields.Char(required=True)
+    code = fields.Char(required=True)
     complete_name = fields.Char(
-        string="Complete Name",
         compute="_compute_complete_name",
         recursive=True,
         store=True,
@@ -37,7 +36,7 @@ class ProductSupplierinfoCategory(models.Model):
         required=True,
         default=lambda self: self.env.company,
     )
-    description = fields.Text(string="Description")
+    description = fields.Text()
     parent_id = fields.Many2one(
         comodel_name="product.supplierinfo.category",
         ondelete="cascade",
@@ -51,14 +50,12 @@ class ProductSupplierinfoCategory(models.Model):
     )
     parent_path = fields.Char(index=True, unaccent=False)
     use_discount_in_supplierinfo = fields.Boolean(
-        string="Use Discount In Supplierinfo",
         compute="_compute_use_discount_in_supplierinfo",
         store=True,
         readonly=False,
         recursive=True,
     )
     use_different_parent_discount = fields.Boolean(
-        string="Use Different Parent Discount",
         compute="_compute_use_different_parent_discount",
         store=True,
         readonly=False,
@@ -142,7 +139,7 @@ class ProductSupplierinfoCategory(models.Model):
     def _compute_complete_name(self):
         for category in self:
             if category.parent_id:
-                category.complete_name = "%s / %s" % (
+                category.complete_name = "{} / {}".format(
                     category.parent_id.complete_name,
                     category.name,
                 )

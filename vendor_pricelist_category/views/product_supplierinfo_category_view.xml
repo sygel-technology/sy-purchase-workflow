@@ -48,7 +48,7 @@
         <field name="name">product.supplierinfo.category.tree.view</field>
         <field name="model">product.supplierinfo.category</field>
         <field name="arch" type="xml">
-            <tree string="Vendor Pricelist Categories">
+            <tree>
                 <field name="complete_name" />
                 <field name="code" />
                 <field name="partner_id" />
