@@ -1,6 +1,6 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-	:target: http://www.gnu.org/licenses/agpl
-	:alt: License: AGPL-3
+  :target: http://www.gnu.org/licenses/agpl
+  :alt: License: AGPL-3
 
 =========================
 Vendor Pricelist Category
@@ -29,6 +29,7 @@ To create new vendor pricelists categories, you need to:
 #. Check the "Use Different Parent Discount" if the disccount applied by this category can be different from the discount applied in it parent category (if a parent category has been selected).
 
 To assign a category to a vendor pricelist, you need to:
+
 #. Go to Purchase > Configuration > Vendor Pricelists.
 #. Go to a Vendor Pricelist and select a Category in the "Category" field. Only categories related to the pricelist's partner can be selected.
 
@@ -42,23 +43,13 @@ To use this module, you need to:
 #. If the category applies a discount, this discount will be shown in the Discount field in the purchase order lines.
 
 
-ROADMAP
-=======
-
-[ Enumerate known caveats and future potential improvements.
-  It is mostly intended for end-users, and can also help
-  potential new contributors discovering new features to implement. ]
-
-* ...
-
-
 Bug Tracker
 ===========
 
-Bugs and errors are managed in `issues of GitHub <https://github.com/sygel/REPOSITORY/issues>`_.
+Bugs and errors are managed in `issues of GitHub <https://github.com/sygel-technology/sy-purchase-workflow/issues>`_.
 In case of problems, please check if your problem has already been
 reported. If you are the first to discover it, help us solving it by indicating
-a detailed description `here <https://github.com/sygel/REPOSITORY/issues/new>`_.
+a detailed description `here <https://github.com/sygel-technology/sy-purchase-workflow/issues/new>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -83,10 +74,10 @@ Maintainer
 
 This module is maintained by Sygel.
 
-.. image:: https://pbs.twimg.com/profile_images/702799639855157248/ujffk9GL_200x200.png
+.. image:: https://www.sygel.es/logo.png
    :alt: Sygel
    :target: https://www.sygel.es
 
-This module is part of the `Sygel/REPOSITORY <https://github.com/sygel/repository>`_.
+This module is part of the `sygel-technology/sy-purchase-workflow <https://github.com/sygel-technology/sy-purchase-workflow>`_.
 
-To contribute to this module, please visit https://github.com/sygel.
+To contribute to this module, please visit https://github.com/sygel-technology.
