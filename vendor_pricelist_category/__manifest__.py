@@ -11,7 +11,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["purchase_triple_discount"],
+    "depends": ["purchase_discount"],
     "data": [
         "security/ir.model.access.csv",
         "views/product_supplierinfo_category_view.xml",
