@@ -6,7 +6,7 @@
     "summary": "Send email/logs/activities notificacions from purchases",
     "version": "12.0.1.0.0",
     "category": "Uncategorized",
-    "website": "https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-purchase-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
@@ -18,9 +18,9 @@
         "purchase_picking_notify_interface",
     ],
     "data": [
-        'views/view_purchase_order_type_form.xml',
-        'views/purchase_order_view.xml',
-        'security/queued_purchase_notify_security.xml',
-        'security/ir.model.access.csv',
+        "views/view_purchase_order_type_form.xml",
+        "views/purchase_order_view.xml",
+        "security/queued_purchase_notify_security.xml",
+        "security/ir.model.access.csv",
     ],
 }
