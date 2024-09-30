@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="view_purchase_order_type_form_queued_purchase_notify" model="ir.ui.view">
+        <field name="name">view.purchase.order.type.form.queued.purchase.notify</field>
+        <field name="model">purchase.order.type</field>
+        <field name="inherit_id" ref="purchase_picking_notify_interface.view_purchase_order_type_notify_interface"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='mail_notification']" position="inside">
+                <group string="Purchase">
+                    <field name="purchase_mail_notify_ids">
+                        <tree editable="bottom">
+                            <field name="time_after_confirmation" string="Time After Confirmation (Hours)"/>
+                            <field name="mail_template_id"/>
+                        </tree>
+                    </field>
+                </group>
+            </xpath>
+            <xpath expr="//page[@name='log_notification']" position="inside">
+                <group string="Purchase">
+                    <field name="purchase_log_note_notify_ids">
+                        <tree editable="bottom">
+                            <field name="time_after_confirmation" string="Time After Confirmation (Hours)"/>
+                            <field name="note_text"/>
+                        </tree>
+                    </field>
+                </group>
+            </xpath>
+            <xpath expr="//page[@name='activity_notification']" position="inside">
+                <group string="Purchase">
+                    <field name="purchase_activity_notify_ids">
+                        <tree editable="bottom">
+                            <field name="time_after_confirmation" string="Time After Confirmation (Hours)"/>
+                            <field name="summary" />
+                            <field name="note" />
+                            <field name="time_to_deadline" string="Days to Deadline"/>
+                            <field name="user_id" strong="User" />
+                        </tree>
+                    </field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
