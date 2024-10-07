@@ -22,3 +22,10 @@ class PurchaseOrderType(models.Model):
         comodel_name="purchase.activity.notify",
         inverse_name="purchase_order_type_id",
     )
+
+    def _get_purchase_notify_ids(self):
+        return {
+            "purchase_mail_notify_ids": self.purchase_mail_notify_ids,
+            "purchase_log_note_notify_ids": self.purchase_log_note_notify_ids,
+            "purchase_activity_notify_ids": self.purchase_activity_notify_ids,
+        }

@@ -4,18 +4,36 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-12 11:00+0000\n"
-"PO-Revision-Date: 2020-11-12 12:03+0100\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2024-10-09 16:37+0000\n"
+"PO-Revision-Date: 2024-10-09 18:51+0200\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"Language: es\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: queued_purchase_notify
+#: model_terms:ir.ui.view,arch_db:queued_purchase_notify.view_purchase_order_type_form_queued_purchase_notify
+msgid "Activity Notifications"
+msgstr "Notificaciones de actividad"
+
+#. module: queued_purchase_notify
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_mail_notify__avoid_internal_users
+msgid "Avoid Internal Users"
+msgstr "Evitar usuarios internos"
+
+#. module: queued_purchase_notify
+#: model:ir.model.fields.selection,name:queued_purchase_notify.selection__purchase_activity_notify__trigger_state__purchase
+#: model:ir.model.fields.selection,name:queued_purchase_notify.selection__purchase_log_note_notify__trigger_state__purchase
+#: model:ir.model.fields.selection,name:queued_purchase_notify.selection__purchase_mail_notify__trigger_state__purchase
+#: model:ir.model.fields.selection,name:queued_purchase_notify.selection__purchase_notify_mixin__trigger_state__purchase
+msgid "Confirmed Purchases"
+msgstr "Compras confirmadas"
 
 #. module: queued_purchase_notify
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__create_uid
@@ -32,11 +50,6 @@ msgid "Created on"
 msgstr "Creado el"
 
 #. module: queued_purchase_notify
-#: model_terms:ir.ui.view,arch_db:queued_purchase_notify.view_purchase_order_type_form_queued_purchase_notify
-msgid "Days to Deadline"
-msgstr "Días hasta vencimiento"
-
-#. module: queued_purchase_notify
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__display_name
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_log_note_notify__display_name
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_mail_notify__display_name
@@ -44,23 +57,11 @@ msgid "Display Name"
 msgstr "Nombre mostrado"
 
 #. module: queued_purchase_notify
-#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_order__has_queues
-msgid "Has Queues"
-msgstr "Tiene colas"
-
-#. module: queued_purchase_notify
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__id
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_log_note_notify__id
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_mail_notify__id
 msgid "ID"
-msgstr "ID"
-
-#. module: queued_purchase_notify
-#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify____last_update
-#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_log_note_notify____last_update
-#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_mail_notify____last_update
-msgid "Last Modified on"
-msgstr "Última modificación en"
+msgstr ""
 
 #. module: queued_purchase_notify
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__write_uid
@@ -77,9 +78,24 @@ msgid "Last Updated on"
 msgstr "Última actualización el"
 
 #. module: queued_purchase_notify
+#: model_terms:ir.ui.view,arch_db:queued_purchase_notify.view_purchase_order_type_form_queued_purchase_notify
+msgid "Log Note Notifications"
+msgstr "Notificaciones de nota"
+
+#. module: queued_purchase_notify
+#: model_terms:ir.ui.view,arch_db:queued_purchase_notify.view_purchase_order_type_form_queued_purchase_notify
+msgid "Mail Notifications"
+msgstr "Notificaciones de correo"
+
+#. module: queued_purchase_notify
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_mail_notify__mail_template_id
 msgid "Mail Template"
 msgstr "Plantilla de correo"
+
+#. module: queued_purchase_notify
+#: model:ir.model,name:queued_purchase_notify.model_purchase_notify_mixin
+msgid "Mixin for queued purchase notification events"
+msgstr "Mixin para eventos de notificación encolados"
 
 #. module: queued_purchase_notify
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__note
@@ -92,9 +108,12 @@ msgid "Note Text"
 msgstr "Texto de la nota"
 
 #. module: queued_purchase_notify
-#: model_terms:ir.ui.view,arch_db:queued_purchase_notify.purchase_order_form_queued_purchase_notify
-msgid "Notification Queues"
-msgstr "Cola de notificaciones"
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__notified_model_id
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_log_note_notify__notified_model_id
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_mail_notify__notified_model_id
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_notify_mixin__notified_model_id
+msgid "Notified Model"
+msgstr "Modelo notificado"
 
 #. module: queued_purchase_notify
 #: model_terms:ir.ui.view,arch_db:queued_purchase_notify.view_purchase_order_type_form_queued_purchase_notify
@@ -113,10 +132,14 @@ msgstr "Notificar compras con nota"
 
 #. module: queued_purchase_notify
 #: model:ir.model,name:queued_purchase_notify.model_purchase_activity_notify
-#: model:ir.model,name:queued_purchase_notify.model_purchase_log_note_notify
 #: model:ir.model,name:queued_purchase_notify.model_purchase_mail_notify
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_order_type__purchase_mail_notify_ids
 msgid "Purchase Mail Notify"
+msgstr "Notificar compras con correo"
+
+#. module: queued_purchase_notify
+#: model:ir.model,name:queued_purchase_notify.model_purchase_log_note_notify
+msgid "Purchase Note Notify"
 msgstr "Notificar compras con correo"
 
 #. module: queued_purchase_notify
@@ -133,13 +156,9 @@ msgstr "Pedido de compra"
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__purchase_order_type_id
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_log_note_notify__purchase_order_type_id
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_mail_notify__purchase_order_type_id
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_notify_mixin__purchase_order_type_id
 msgid "Purchase Order Type"
 msgstr "Tipo de pedido de compra"
-
-#. module: queued_purchase_notify
-#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_order__purchase_queue_ids
-msgid "Purchase Queues"
-msgstr "Cola de compra"
 
 #. module: queued_purchase_notify
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__summary
@@ -150,13 +169,9 @@ msgstr "Resumen"
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__time_after_confirmation
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_log_note_notify__time_after_confirmation
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_mail_notify__time_after_confirmation
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_notify_mixin__time_after_confirmation
 msgid "Time After Confirmation"
 msgstr "Tiempo tras la confirmación"
-
-#. module: queued_purchase_notify
-#: model_terms:ir.ui.view,arch_db:queued_purchase_notify.view_purchase_order_type_form_queued_purchase_notify
-msgid "Time After Confirmation (Hours)"
-msgstr "Tiempo tras la confirmación (horas)"
 
 #. module: queued_purchase_notify
 #: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__time_to_deadline
@@ -164,6 +179,19 @@ msgid "Time To Deadline"
 msgstr "Tiempo hasta el vencimiento"
 
 #. module: queued_purchase_notify
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__trigger_state
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_log_note_notify__trigger_state
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_mail_notify__trigger_state
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_notify_mixin__trigger_state
+msgid "Trigger State"
+msgstr "Estado de activación"
+
+#. module: queued_purchase_notify
 #: model:ir.model,name:queued_purchase_notify.model_purchase_order_type
 msgid "Type of purchase order"
-msgstr "Tipo de orden de compra"
+msgstr "Tipo de Orden de Compra"
+
+#. module: queued_purchase_notify
+#: model:ir.model.fields,field_description:queued_purchase_notify.field_purchase_activity_notify__user_id
+msgid "User"
+msgstr "Usuario"
