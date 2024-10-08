@@ -29,6 +29,7 @@ class ProductSupplierinfoCategory(models.Model):
         compute="_compute_partner_id",
         readonly=False,
         store=True,
+        recursive=True,
     )
     company_id = fields.Many2one(
         comodel_name="res.company",
@@ -70,13 +71,23 @@ class ProductSupplierinfoCategory(models.Model):
         recursive=True,
     )
 
-    _sql_constraints = [
-        (
-            "code_company_unique",
-            "unique(code, company_id)",
-            _("The code is already in use."),
-        )
-    ]
+    @api.constrains("code", "company_id", "parent_id")
+    def _check_code(self):
+        for category in self.filtered("code"):
+            categories_count = self.search_count(
+                [
+                    ("parent_id", "=", category.parent_id.id),
+                    ("company_id", "=", category.company_id.id),
+                    ("code", "=", category.code),
+                ]
+            )
+            if categories_count > 1:
+                raise ValidationError(
+                    _(
+                        "Code must be unique for categories with the same "
+                        "parent category."
+                    )
+                )
 
     @api.constrains("parent_id")
     def _check_category_recursion(self):

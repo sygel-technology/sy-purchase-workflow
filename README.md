@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[vendor_pricelist_category](vendor_pricelist_category/) | 16.0.1.0.0 |  | Categorize vendor pricelists
+[vendor_pricelist_category](vendor_pricelist_category/) | 16.0.1.0.1 |  | Categorize vendor pricelists
 
 [//]: # (end addons)
 

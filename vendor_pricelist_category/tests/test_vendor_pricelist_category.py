@@ -109,3 +109,57 @@ class TestVendorPricelistCategory(common.TransactionCase):
         # to which the category is applied
         with self.assertRaises(ValidationError):
             supplierinfo_category.write({"partner_id": self.vendor_alt.id})
+
+    def test_check_supplier_category_code(self):
+        # Right code: Different code
+        supplierinfo_category_a = self.env["product.supplierinfo.category"].create(
+            {
+                "name": "Supplierinfo Category-A",
+                "code": "A",
+                "partner_id": self.vendor.id,
+            }
+        )
+        supplierinfo_category_b = self.env["product.supplierinfo.category"].create(
+            {
+                "name": "Supplierinfo Category-B",
+                "code": "B",
+                "partner_id": self.vendor.id,
+            }
+        )
+        self.assertTrue(supplierinfo_category_a)
+        self.assertEqual(supplierinfo_category_a.code, "A")
+        self.assertTrue(supplierinfo_category_b)
+        self.assertEqual(supplierinfo_category_b.code, "B")
+
+        # Wrong code: Same code in same level (no parent_id)
+        with self.assertRaises(ValidationError):
+            self.env["product.supplierinfo.category"].create(
+                {
+                    "name": "Supplierinfo Category-C",
+                    "code": "A",
+                    "partner_id": self.vendor.id,
+                }
+            )
+
+        # Right code: Same code in different level
+        supplierinfo_category_a_a = self.env["product.supplierinfo.category"].create(
+            {
+                "name": "Supplierinfo Category-A-A",
+                "code": "A",
+                "partner_id": self.vendor.id,
+                "parent_id": supplierinfo_category_a.id,
+            }
+        )
+        self.assertTrue(supplierinfo_category_a_a)
+        self.assertEqual(supplierinfo_category_a.code, supplierinfo_category_a_a.code)
+
+        # Wrong code: Same code in same level (with parent_id)
+        with self.assertRaises(ValidationError):
+            self.env["product.supplierinfo.category"].create(
+                {
+                    "name": "Supplierinfo Category-C-B",
+                    "code": "A",
+                    "partner_id": self.vendor.id,
+                    "parent_id": supplierinfo_category_a.id,
+                }
+            )
