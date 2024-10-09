@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-19 07:58+0000\n"
-"PO-Revision-Date: 2023-10-19 09:58+0200\n"
+"POT-Creation-Date: 2024-10-08 06:12+0000\n"
+"PO-Revision-Date: 2024-10-08 08:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -32,6 +32,15 @@ msgstr "Subcategorías"
 #: model:ir.model.fields,field_description:vendor_pricelist_category.field_product_supplierinfo_category__code
 msgid "Code"
 msgstr "Código"
+
+#. module: vendor_pricelist_category
+#. odoo-python
+#: code:addons/vendor_pricelist_category/models/product_supplierinfo_category.py:0
+#, python-format
+msgid "Code must be unique for categories with the same parent category."
+msgstr ""
+"El código tiene que ser único para las categorías con la misma categoría "
+"padre."
 
 #. module: vendor_pricelist_category
 #: model:ir.model.fields,field_description:vendor_pricelist_category.field_product_supplierinfo_category__company_id
@@ -116,20 +125,7 @@ msgstr "Buscar"
 #. module: vendor_pricelist_category
 #: model:ir.model,name:vendor_pricelist_category.model_product_supplierinfo
 msgid "Supplier Pricelist"
-msgstr "Tarifa de proveedor"
-
-#. module: vendor_pricelist_category
-#. odoo-python
-#: code:addons/vendor_pricelist_category/models/product_supplierinfo_category.py:0
-#: model:ir.model.constraint,message:vendor_pricelist_category.constraint_product_supplierinfo_category_code_company_unique
-#, python-format
-msgid "The code is already in use."
-msgstr "El código ya existe."
-
-#. module: vendor_pricelist_category
-#: model:ir.model.fields,field_description:vendor_pricelist_category.field_product_supplierinfo__use_category_discount
-msgid "Use Category Discount"
-msgstr "Usar descuento de categoría"
+msgstr "Lista de precios de proveedor"
 
 #. module: vendor_pricelist_category
 #: model:ir.model.fields,field_description:vendor_pricelist_category.field_product_supplierinfo_category__use_different_parent_discount
@@ -137,9 +133,10 @@ msgid "Use Different Parent Discount"
 msgstr "Utilizar descuento distinto al padre"
 
 #. module: vendor_pricelist_category
+#: model:ir.model.fields,field_description:vendor_pricelist_category.field_product_supplierinfo__use_category_discount
 #: model:ir.model.fields,field_description:vendor_pricelist_category.field_product_supplierinfo_category__use_discount_in_supplierinfo
 msgid "Use Discount In Supplierinfo"
-msgstr "Utilizar descuento en tarifa"
+msgstr "Usar descuento de categoría"
 
 #. module: vendor_pricelist_category
 #: model:ir.model.fields,field_description:vendor_pricelist_category.field_product_supplierinfo_category__partner_id
@@ -149,7 +146,6 @@ msgstr "Proveedor"
 #. module: vendor_pricelist_category
 #: model:ir.actions.act_window,name:vendor_pricelist_category.product_supplierinfo_category_action
 #: model:ir.ui.menu,name:vendor_pricelist_category.product_supplierinfo_category_menu
-#: model_terms:ir.ui.view,arch_db:vendor_pricelist_category.product_supplierinfo_category_tree_view
 msgid "Vendor Pricelist Categories"
 msgstr "Categorías de tarifa de proveedor"
 
