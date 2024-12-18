@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="purchase_order_form_split_wizard" model="ir.ui.view">
+        <field name="name">purchase.order.form.split.wizard</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form" />
+        <field name="arch" type="xml">
+            <!-- BUTTONS -->
+            <xpath expr="//header" position="inside">
+                <field name="split_status" invisible="1" />
+                <button
+                    type="object"
+                    name="button_split"
+                    string="Split Purchase"
+                    attrs="{'invisible': ['|', ('split_status', 'in', ['children', 'parent_splitted']), ('state', 'not in', ['draft', 'sent', 'cancel'])]}"
+                    data-hotkey="s"
+                />
+            </xpath>
+            <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+                <field name="splitted_purchase_parent_id" invisible="1" />
+                <button
+                    type="object"
+                    name="action_view_splitted_purchase_parent_id"
+                    string="Origin Purchase"
+                    class="oe_stat_button"
+                    icon="fa-sitemap"
+                    attrs="{'invisible': [('splitted_purchase_parent_id','=', False)]}"
+                    groups="purchase.group_purchase_manager"
+                />
+                <button
+                    type="object"
+                    name="action_view_splitted_purchase_children_ids"
+                    class="oe_stat_button"
+                    icon="fa-sitemap"
+                    attrs="{'invisible': [('splitted_purchase_children_count','=', 0)]}"
+                    groups="purchase.group_purchase_manager"
+                >
+                    <field
+                        name="splitted_purchase_children_count"
+                        widget="statinfo"
+                        string="Subpurchases"
+                    />
+                </button>
+            </xpath>
+            <!-- OPTIONAL INFORMATION FIELDS -->
+            <xpath expr="//field[@name='date_order']" position="before">
+                <field
+                    name="split_status"
+                    attrs="{'invisible': [('split_status', '=', 'none')]}"
+                />
+            </xpath>
+            <xpath expr="//tree/field[@name='product_qty']" position="after">
+                <field name="split_status" invisible="1" />
+                <field
+                    name="qty_splitted_total"
+                    optional="hide"
+                    attrs="{'column_invisible': [('parent.split_status', 'in', ['none', 'children'])]}"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_purchase_order_filter" model="ir.ui.view">
+        <field name="name">request.quotation.select</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.view_purchase_order_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='late_rfqs']" position="after">
+                <filter
+                    string="Subpurchases"
+                    name="splitted_purchase_children"
+                    domain="[('split_status', '=', 'children')]"
+                />
+                <filter
+                    string="Splitted Purchases"
+                    name="splitted_purchase_parent"
+                    domain="[('split_status', '!=', 'parent_splitted'),('active', '=', False)]"
+                />
+                <filter
+                    string="Partially Splitted Purchases"
+                    name="splitted_purchase_partially"
+                    domain="[('split_status', '=', 'parent_partially'), ('active', '=', False)]"
+                />
+            </xpath>
+            <xpath expr="//filter[@name='order_date']" position="inside">
+                <filter
+                    string="Splitted Purchase Origin"
+                    name="splitted_purchase_parent_group"
+                    domain="[]"
+                    context="{'group_by': 'splitted_purchase_parent_id'}"
+                />
+                <filter
+                    string="Split status"
+                    name="split_status_group"
+                    domain="[]"
+                    context="{'group_by': 'split_status'}"
+                />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
