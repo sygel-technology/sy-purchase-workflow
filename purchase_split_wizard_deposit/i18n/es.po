@@ -1,0 +1,140 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_split_wizard_deposit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-11 16:46+0000\n"
+"PO-Revision-Date: 2024-12-11 17:48+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_split_wizard__advance_line_ids
+msgid "Advance lines"
+msgstr "Lineas de anticipo"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__amount
+msgid "Amount"
+msgstr "Importe"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__display_type
+msgid "Display Type"
+msgstr ""
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__max_amount
+msgid "Max Amount"
+msgstr "Importe máximo"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__name
+msgid "Name"
+msgstr "Descripción"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields.selection,name:purchase_split_wizard_deposit.selection__purchase_advance_line_split_wizard__display_type__line_note
+msgid "Note"
+msgstr "Nota"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: purchase_split_wizard_deposit
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard_deposit.purchase_split_wizard_form_advance_invoice
+msgid "Purchase Deposits"
+msgstr "Depósitos de compra"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__purchase_line_origin_id
+msgid "Purchase Line"
+msgstr "Linea de compra"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model,name:purchase_split_wizard_deposit.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea de pedido de compra"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields.selection,name:purchase_split_wizard_deposit.selection__purchase_advance_line_split_wizard__display_type__line_section
+msgid "Section"
+msgstr "Sección"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_split_wizard__split_advances
+msgid "Split Advances"
+msgstr "Dividir anticipos"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model.fields,field_description:purchase_split_wizard_deposit.field_purchase_advance_line_split_wizard__wizard_id
+msgid "Wizard"
+msgstr "Asistente"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model,name:purchase_split_wizard_deposit.model_purchase_advance_line_split_wizard
+msgid "Wizard aux model to split purchase lines"
+msgstr "Modelo asistente auxiliar para dividir lineas de compra"
+
+#. module: purchase_split_wizard_deposit
+#: model:ir.model,name:purchase_split_wizard_deposit.model_purchase_split_wizard
+msgid "Wizard to split purchases"
+msgstr "Asistente para dividir compras"
+
+#. module: purchase_split_wizard_deposit
+#. odoo-python
+#: code:addons/purchase_split_wizard_deposit/wizards/purchase_split_wizard.py:0
+#, python-format
+msgid "The amount can not be higher than the max amount."
+msgstr "La cantidad no puede ser mayor que la cantidad máxima"

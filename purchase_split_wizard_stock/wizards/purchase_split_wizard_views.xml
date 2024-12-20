@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="purchase_split_wizard_form_stock" model="ir.ui.view">
+        <field name="name">Purchase Split Wizard Stock</field>
+        <field name="model">purchase.split.wizard</field>
+        <field
+            name="inherit_id"
+            ref="purchase_split_wizard.purchase_split_wizard_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="inside">
+                <group>
+                    <field
+                        name="picking_type_id"
+                        required="1"
+                        domain="[('code','=','incoming'), '|', ('warehouse_id', '=', False), ('warehouse_id.company_id', '=', company_id)]"
+                        options="{'no_create': True}"
+                        groups="stock.group_stock_multi_locations"
+                    />
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

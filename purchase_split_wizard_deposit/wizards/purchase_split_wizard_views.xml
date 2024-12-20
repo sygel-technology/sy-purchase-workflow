@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="purchase_split_wizard_form_advance_invoice" model="ir.ui.view">
+        <field name="name">Purchase Split Wizard Advance Invoice</field>
+        <field name="model">purchase.split.wizard</field>
+        <field
+            name="inherit_id"
+            ref="purchase_split_wizard.purchase_split_wizard_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='options']" position="inside">
+                <field name="split_advances" />
+            </xpath>
+            <xpath expr="//group[@name='purchase_lines']" position="after">
+                <group
+                    string="Purchase Deposits"
+                    attrs="{'invisible': [('split_advances','=', False)]}"
+                >
+                    <field
+                        name="advance_line_ids"
+                        nolabel="1"
+                        colspan="2"
+                        force_save="1"
+                        widget="section_and_note_one2many"
+                    >
+                        <tree multi_edit="1" editable="bottom" create="false">
+                            <field name="display_type" invisible="1" />
+                            <field
+                                name="purchase_line_origin_id"
+                                invisible="1"
+                                force_save="1"
+                            />
+                            <field name="currency_id" invisible="1" />
+                            <field name="product_id" force_save="1" readonly="1" />
+                            <field name="name" />
+                            <field name="amount" />
+                            <field name="max_amount" />
+                        </tree>
+                    </field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

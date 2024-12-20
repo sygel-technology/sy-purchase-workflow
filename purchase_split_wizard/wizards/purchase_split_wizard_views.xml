@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="purchase_split_wizard_form" model="ir.ui.view">
+        <field name="name">Purchase Split Wizard</field>
+        <field name="model">purchase.split.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="company_id" invisible="1" />
+                        <field name="partner_id" />
+                        <field name="partner_ref" />
+                    </group>
+                    <group>
+                        <field name="date_order" />
+                        <field name="date_planned" />
+                    </group>
+                    <group>
+                        <field name="currency_id" />
+                        <field name="user_id" />
+                        <field name="origin" />
+                    </group>
+                    <group>
+                        <field name="incoterm_id" />
+                        <field name="payment_term_id" />
+                        <field name="payment_mode_id" />
+                    </group>
+                </group>
+                <group name="options">
+                    <field name="product_price_option" />
+                </group>
+                <group string="Purchase Lines" name="purchase_lines">
+                    <field
+                        name="wizard_line_ids"
+                        nolabel="1"
+                        colspan="2"
+                        force_save="1"
+                        widget="section_and_note_one2many"
+                    >
+                        <tree multi_edit="1" editable="bottom" create="false">
+                            <field name="display_type" invisible="1" />
+                            <field
+                                name="purchase_line_origin_id"
+                                invisible="1"
+                                force_save="1"
+                            />
+                            <field name="sequence" widget="handle" />
+                            <field name="product_id" force_save="1" readonly="1" />
+                            <field name="name" />
+                            <field name="product_qty" />
+                            <field name="max_product_qty" />
+                        </tree>
+                    </field>
+                </group>
+                <footer>
+                    <button
+                        name="action_accept"
+                        type="object"
+                        string="Accept"
+                        class="oe_highlight"
+                    />
+                    or
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="purchase_split_wizard_action" model="ir.actions.act_window">
+        <field name="name">Purchase Split Wizard</field>
+        <field name="res_model">purchase.split.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

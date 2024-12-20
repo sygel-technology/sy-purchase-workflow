@@ -1,0 +1,368 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_split_wizard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-11 16:50+0000\n"
+"PO-Revision-Date: 2024-12-11 16:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.purchase_split_wizard_form
+msgid "Accept"
+msgstr "Aceptar"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__user_id
+msgid "Buyer"
+msgstr "Comprador"
+
+#. module: purchase_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.purchase_split_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields.selection,name:purchase_split_wizard.selection__purchase_order__split_status__children
+msgid "Children"
+msgstr "Hijo"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__create_uid
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__create_date
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__display_name
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__display_type
+msgid "Display Type"
+msgstr ""
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__date_planned
+msgid "Expected Arrival"
+msgstr "Llegada esperada"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__id
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields.selection,name:purchase_split_wizard.selection__purchase_order__split_status__parent_partially
+msgid "In Progress"
+msgstr "En progreso"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__incoterm_id
+msgid "Incoterm"
+msgstr ""
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard____last_update
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__write_uid
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__write_date
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__max_product_qty
+msgid "Max Quantity"
+msgstr "Cantidad max."
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields.selection,name:purchase_split_wizard.selection__purchase_order__split_status__none
+msgid "None"
+msgstr "Ninguno"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields.selection,name:purchase_split_wizard.selection__purchase_line_split_wizard__display_type__line_note
+msgid "Note"
+msgstr "Nota"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__date_order
+msgid "Order Deadline"
+msgstr "Fecha limite pedido"
+
+#. module: purchase_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.purchase_order_form_split_wizard
+msgid "Origin Purchase"
+msgstr "Compra original"
+
+#. module: purchase_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.view_purchase_order_filter
+msgid "Partially Splitted Purchases"
+msgstr "Compras parcialmente divididas"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__payment_mode_id
+msgid "Payment Mode"
+msgstr "Modo de pago"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__payment_term_id
+msgid "Payment Terms"
+msgstr "Términos de pago"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields.selection,name:purchase_split_wizard.selection__purchase_split_wizard__product_price_option__product
+msgid "Product Price"
+msgstr "Precio de producto"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__product_price_option
+msgid "Product Price Option"
+msgstr "Precio de productos"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__purchase_origin_id
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__purchase_line_origin_id
+msgid "Purchase Line"
+msgstr "Linea de compra"
+
+#. module: purchase_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.purchase_split_wizard_form
+msgid "Purchase Lines"
+msgstr "Lineas de compra"
+
+#. module: purchase_split_wizard
+#: model:ir.model,name:purchase_split_wizard.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: purchase_split_wizard
+#: model:ir.model,name:purchase_split_wizard.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea de pedido de compra"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields.selection,name:purchase_split_wizard.selection__purchase_split_wizard__product_price_option__purchase
+msgid "Purchase Order Price"
+msgstr "Precio en pedido de compra"
+
+#. module: purchase_split_wizard
+#. odoo-python
+#: code:addons/purchase_split_wizard/models/purchase_order.py:0
+#: model:ir.actions.act_window,name:purchase_split_wizard.purchase_split_wizard_action
+#, python-format
+msgid "Purchase Split Wizard"
+msgstr "Asistente de separación de compras"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__wizard_line_ids
+msgid "Purchase lines"
+msgstr "Lineas de compra"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order_line__qty_splittable
+msgid "Qty Splittable"
+msgstr "Cant. Separable"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order_line__qty_splitted
+msgid "Qty Splitted"
+msgstr "Cant. Separada"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order_line__qty_splitted_total
+msgid "Qty Splitted (Total)"
+msgstr "Cant. Separada (Total)"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__product_qty
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields.selection,name:purchase_split_wizard.selection__purchase_line_split_wizard__display_type__line_section
+msgid "Section"
+msgstr "Sección"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__origin
+msgid "Source Document"
+msgstr "Documento Origen"
+
+#. module: purchase_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.purchase_order_form_split_wizard
+msgid "Split Purchase"
+msgstr "Compra separada"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order__split_status
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order_line__split_status
+msgid "Split Status"
+msgstr "Estado de separación"
+
+#. module: purchase_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.view_purchase_order_filter
+msgid "Split status"
+msgstr "Estado de separación"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields.selection,name:purchase_split_wizard.selection__purchase_order__split_status__parent_splitted
+msgid "Splitted"
+msgstr "Dividido"
+
+#. module: purchase_split_wizard
+#. odoo-python
+#: code:addons/purchase_split_wizard/wizards/purchase_split_wizard.py:0
+#, python-format
+msgid "Splitted Purchase"
+msgstr "Compra separada"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order__splitted_purchase_children_ids
+msgid "Splitted Purchase Childrens"
+msgstr "Compra separadas hijas"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order_line__splitted_purchase_line_parent_id
+msgid "Splitted Purchase Line Origin"
+msgstr "Linea de compra original de la separación"
+
+#. module: purchase_split_wizard
+#. odoo-python
+#: code:addons/purchase_split_wizard/models/purchase_order.py:0
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order__splitted_purchase_parent_id
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.view_purchase_order_filter
+#, python-format
+msgid "Splitted Purchase Origin"
+msgstr "Compra original de la separación"
+
+#. module: purchase_split_wizard
+#. odoo-python
+#: code:addons/purchase_split_wizard/models/purchase_order.py:0
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.view_purchase_order_filter
+#, python-format
+msgid "Splitted Purchases"
+msgstr "Compras separadas"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order__splitted_purchase_children_count
+msgid "Splitted Purchases Count"
+msgstr "Nº compras separadas"
+
+#. module: purchase_split_wizard
+#: model:ir.model,name:purchase_split_wizard.model_stock_rule
+msgid "Stock Rule"
+msgstr "Regla de inventario"
+
+#. module: purchase_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.purchase_order_form_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.view_purchase_order_filter
+msgid "Subpurchases"
+msgstr "Subcompras"
+
+#. module: purchase_split_wizard
+#. odoo-python
+#: code:addons/purchase_split_wizard/wizards/purchase_split_wizard.py:0
+#, python-format
+msgid "The quantity can not be higher than the max quantity"
+msgstr "La cantidad no puede ser mayor que la cantidad máxima"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__partner_id
+msgid "Vendor"
+msgstr "Proveedor"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_split_wizard__partner_ref
+msgid "Vendor Reference"
+msgstr "Referencia de proveedor"
+
+#. module: purchase_split_wizard
+#: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_line_split_wizard__wizard_id
+msgid "Wizard"
+msgstr "Asistente"
+
+#. module: purchase_split_wizard
+#: model:ir.model,name:purchase_split_wizard.model_purchase_line_split_wizard
+msgid "Wizard aux model to split purchase lines"
+msgstr "Modelo asistente auxiliar para dividir lineas de compra"
+
+#. module: purchase_split_wizard
+#: model:ir.model,name:purchase_split_wizard.model_purchase_split_wizard
+msgid "Wizard to split purchases"
+msgstr "Asistente para dividir compras"
+
+#. module: purchase_split_wizard
+#. odoo-python
+#: code:addons/purchase_split_wizard/models/purchase_order.py:0
+#, python-format
+msgid "You can not change active status of splitted purchases"
+msgstr "No puedes cambiar el estado activo de compras divididas"
+
+#. module: purchase_split_wizard
+#. odoo-python
+#: code:addons/purchase_split_wizard/models/purchase_order.py:0
+#, python-format
+msgid "You can not confirm splitted purchases"
+msgstr "No puedes confirmar compras divididas"
+
+#. module: purchase_split_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_split_wizard.purchase_split_wizard_form
+msgid "or"
+msgstr "o"

@@ -1,0 +1,26 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_split_wizard_order_type
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-09 12:23+0000\n"
+"PO-Revision-Date: 2024-12-09 12:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_split_wizard_order_type
+#: model:ir.model.fields,field_description:purchase_split_wizard_order_type.field_purchase_split_wizard__order_type
+msgid "Purchase Order Type"
+msgstr "Tipo de pedido de compra"
+
+#. module: purchase_split_wizard_order_type
+#: model:ir.model,name:purchase_split_wizard_order_type.model_purchase_split_wizard
+msgid "Wizard to split purchases"
+msgstr "Asistente para dividir compras"

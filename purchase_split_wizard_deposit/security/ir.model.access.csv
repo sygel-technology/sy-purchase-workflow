@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+purchase_advance_line_split_wizard_admin,purchase_advance_line_split_wizard_admin,model_purchase_advance_line_split_wizard,purchase.group_purchase_manager,1,1,1,1
