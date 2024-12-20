@@ -21,6 +21,11 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[purchase_order_archive_draft](purchase_order_archive_draft/) | 16.0.1.0.0 |  | Archive purchase orders in draft or sent state
+[purchase_split_wizard](purchase_split_wizard/) | 16.0.1.0.0 |  | Wizard to split purchase orders into multiple ones
+[purchase_split_wizard_deposit](purchase_split_wizard_deposit/) | 16.0.1.0.0 |  | Split also purchase deposit invoices
+[purchase_split_wizard_order_type](purchase_split_wizard_order_type/) | 16.0.1.0.0 |  | Purchase Split Wizard with order type field
+[purchase_split_wizard_stock](purchase_split_wizard_stock/) | 16.0.1.0.0 |  | Purchase Split Wizard with added stock fields
 [vendor_pricelist_category](vendor_pricelist_category/) | 16.0.1.0.1 |  | Categorize vendor pricelists
 
 [//]: # (end addons)
