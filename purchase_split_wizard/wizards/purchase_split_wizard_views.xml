@@ -10,7 +10,8 @@
             <form>
                 <group>
                     <group>
-                        <field name="company_id" invisible="1" />
+                        <field name="purchase_origin_id" invisible="1" force_save="1" />
+                        <field name="company_id" invisible="1" force_save="1" />
                         <field name="partner_id" />
                         <field name="partner_ref" />
                     </group>
