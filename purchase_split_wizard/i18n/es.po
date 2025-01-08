@@ -248,7 +248,7 @@ msgstr "Documento Origen"
 #. module: purchase_split_wizard
 #: model_terms:ir.ui.view,arch_db:purchase_split_wizard.purchase_order_form_split_wizard
 msgid "Split Purchase"
-msgstr "Compra separada"
+msgstr "Separar compra"
 
 #. module: purchase_split_wizard
 #: model:ir.model.fields,field_description:purchase_split_wizard.field_purchase_order__split_status

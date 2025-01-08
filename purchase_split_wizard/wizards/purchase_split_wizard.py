@@ -14,7 +14,6 @@ class PurchaseSplitWizard(models.TransientModel):
     company_id = fields.Many2one(
         string="Company",
         comodel_name="res.company",
-        required=True,
         related="purchase_origin_id.company_id",
     )
     partner_id = fields.Many2one(
