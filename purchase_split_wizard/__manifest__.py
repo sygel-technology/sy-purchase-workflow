@@ -3,7 +3,7 @@
 {
     "name": "Purchase Split Wizard",
     "summary": "Wizard to split purchase orders into multiple ones",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "category": "Purchase",
     "website": "https://github.com/sygel-technology/sy-purchase-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",
