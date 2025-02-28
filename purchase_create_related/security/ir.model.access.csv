@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_order_secondary_linker,access_purchase_order_secondary_linker,model_purchase_order_secondary_linker,purchase.group_purchase_user,1,1,1,1
