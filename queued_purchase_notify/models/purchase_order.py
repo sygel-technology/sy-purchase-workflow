@@ -1,11 +1,17 @@
 # Copyright 2020 Manuel Regidor <manuel.regidor@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import models
+from odoo import fields, models
 
 
 class PurchaseOrder(models.Model):
     _inherit = "purchase.order"
+
+    mail_queue_ids = fields.Many2many(
+        string="Purchase Queues",
+        comodel_name="queue.job",
+        compute="_compute_mail_queues",
+    )
 
     def button_confirm(self):
         res = super().button_confirm()
@@ -16,3 +22,19 @@ class PurchaseOrder(models.Model):
                     if notify_id.is_to_notify(rec):
                         notify_id.notify(rec)
         return res
+
+    def _compute_mail_queues(self):
+        for obj in self:
+            obj.mail_queue_ids = (
+                self.env["queue.job"]
+                .search(
+                    [
+                        [
+                            "func_string",
+                            "=like",
+                            f"purchase.mail.notify(%,)._notify_thread(purchase.order({obj.id},))",
+                        ]
+                    ]
+                )
+                .ids
+            )

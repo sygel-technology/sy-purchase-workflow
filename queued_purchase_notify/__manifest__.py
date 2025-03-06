@@ -19,5 +19,6 @@
         "security/queued_purchase_notify_security.xml",
         "security/ir.model.access.csv",
         "views/view_purchase_order_type_form.xml",
+        "views/purchase_order.xml",
     ],
 }
