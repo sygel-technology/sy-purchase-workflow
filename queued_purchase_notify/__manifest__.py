@@ -4,7 +4,7 @@
 {
     "name": "Queued Purchase Notify",
     "summary": "Schedule email/logs/activities notificacions on purchases",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.1.0",
     "category": "Purchases",
     "website": "https://github.com/sygel-technology/sy-purchase-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",
