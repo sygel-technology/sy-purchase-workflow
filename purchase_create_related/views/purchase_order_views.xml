@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="purchase_order_secondary_linker_action" model="ir.actions.server">
+        <field name="name">Create/Link Secondary Purchases</field>
+        <field name="model_id" ref="model_purchase_order" />
+        <field name="binding_model_id" ref="model_purchase_order" />
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+                action = records.action_create_related_wizard()
+        </field>
+    </record>
+
+    <record id="purchase_order_form_related_purchases" model="ir.ui.view">
+        <field name="name">purchase.order.form.related.purchases</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='other_info']" position="inside">
+                <field name="can_be_secondary" />
+            </xpath>
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <field name="secondary_purchase_ids" invisible="True" />
+                <button
+                    type="object"
+                    string="Secondary Purchase"
+                    name="action_secondary_purchase"
+                    class="oe_stat_button"
+                    icon="fa-shopping-cart"
+                    invisible="secondary_purchases_count == 0"
+                >
+                    <field
+                        name="secondary_purchases_count"
+                        widget="statinfo"
+                        string="Secondary Purchases"
+                    />
+                </button>
+                <button
+                    type="object"
+                    name="action_main_purchases"
+                    class="oe_stat_button"
+                    icon="fa-shopping-cart"
+                    invisible="main_purchases_count == 0"
+                >
+                    <field
+                        name="main_purchases_count"
+                        widget="statinfo"
+                        string="Main Purchases"
+                    />
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="purchase_order_search_related_purchases" model="ir.ui.view">
+        <field name="name">request.quotation.select.related_purchases</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.view_purchase_order_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='activities_exception']" position="after">
+                <separator />
+                <filter
+                    string="Main Purchases"
+                    name="main_purchases"
+                    domain="[('secondary_purchase_ids', '!=', False)]"
+                />
+                <filter
+                    string="Secondary Purchases"
+                    name="secondary_purchases"
+                    domain="[('main_purchase_ids', '!=', False)]"
+                />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
