@@ -1,7 +1,8 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-purchase-workflow"
-version = "17.0.20250305.0"
+version = "17.0.20250312.0"
 dependencies = [
+    "odoo-addon-purchase_create_related>=17.0dev,<17.1dev",
     "odoo-addon-purchase_order_no_price>=17.0dev,<17.1dev",
     "odoo-addon-purchase_product_warn_message>=17.0dev,<17.1dev",
     "odoo-addon-queued_purchase_notify>=17.0dev,<17.1dev",
