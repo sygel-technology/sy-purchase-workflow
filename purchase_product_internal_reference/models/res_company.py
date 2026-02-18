@@ -9,6 +9,7 @@ class ResCompany(models.Model):
 
     internal_ref_product = fields.Boolean(
         string="Show internal product reference",
-        help="Show the internal product reference on purchases. The default is the supplier's reference.",
+        help="Show the internal product reference on purchases."
+        " The default is the supplier's reference.",
         default=False,
     )

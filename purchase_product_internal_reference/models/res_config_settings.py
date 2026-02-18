@@ -10,7 +10,8 @@ class ResConfigSettings(models.TransientModel):
     internal_ref_product = fields.Boolean(
         related="company_id.internal_ref_product",
         string="Show internal product reference",
-        help="Show the internal product reference on purchases. The default is the supplier's reference.",
+        help="Show the internal product reference on purchases."
+        " The default is the supplier's reference.",
         store=True,
         readonly=False,
     )
