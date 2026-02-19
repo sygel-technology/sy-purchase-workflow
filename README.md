@@ -16,6 +16,13 @@ Odoo Purchases, Workflow and Organization
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[purchase_product_internal_reference](purchase_product_internal_reference/) | 18.0.1.0.0 |  | Display internal product reference in purchase orders
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
