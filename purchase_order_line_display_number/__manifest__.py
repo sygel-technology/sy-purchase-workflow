@@ -4,7 +4,7 @@
 {
     "name": "Purchase Order Line Display Number",
     "summary": "Configure the number of purchase order lines to be shown",
-    "version": "15.0.1.0.0",
+    "version": "18.0.1.0.0",
     "category": "Purchase",
     "website": "https://github.com/sygel-technology/sy-purchase-workflow",
     "author": "Sygel",
@@ -17,7 +17,7 @@
     "data": ["data/purchase_order_line_display_number_data.xml"],
     "assets": {
         "web.assets_backend": [
-            "purchase_order_line_display_number/static/src/js/form_view.js",
+            "purchase_order_line_display_number/static/src/js/form_view.esm.js",
         ]
     },
 }
