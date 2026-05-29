@@ -1,7 +1,8 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-purchase-workflow"
-version = "18.0.20260219.0"
+version = "18.0.20260529.0"
 dependencies = [
+    "odoo-addon-purchase_order_line_display_number==18.0.*",
     "odoo-addon-purchase_product_internal_reference==18.0.*",
 ]
 classifiers=[
