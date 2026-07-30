@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[purchase_create_related](purchase_create_related/) | 17.0.1.0.0 |  | Create main-secondary relations beetween purchases with a wizard
+[purchase_create_related](purchase_create_related/) | 17.0.1.0.1 |  | Create main-secondary relations beetween purchases with a wizard
 [purchase_order_no_price](purchase_order_no_price/) | 17.0.1.0.0 |  | No price by default in purchases, setted at partner level
 [purchase_product_warn_message](purchase_product_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on purchase
 [queued_purchase_notify](queued_purchase_notify/) | 17.0.1.1.0 |  | Schedule email/logs/activities notificacions on purchases
