@@ -1,3 +1,7 @@
+.. image:: https://odoo-community.org/readme-banner-image
+   :target: https://odoo-community.org/get-involved?utm_source=readme
+   :alt: Odoo Community Association
+
 =======================
 Purchase Create Related
 =======================
@@ -13,7 +17,7 @@ Purchase Create Related
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-sygel--technology%2Fsy--purchase--workflow-lightgray.png?logo=github
@@ -64,6 +68,13 @@ need to:
    "draft", "sent" or "to approve" state.
 5. Click Accept
 
+Known issues / Roadmap
+======================
+
+-  Migration to upper versions requires refactoring. The module name
+   must be changed. The code, and the names inside it should also be
+   refactored.
+
 Bug Tracker
 ===========
 
@@ -85,9 +96,9 @@ Authors
 Contributors
 ------------
 
-- Alberto Martínez alberto.martinez@sygel.es
-- Valentin Vinagre valentin.vinagre@sygel.es
-- Harald Panten harald.panten@sygel.es
+-  Alberto Martínez alberto.martinez@sygel.es
+-  Valentin Vinagre valentin.vinagre@sygel.es
+-  Harald Panten harald.panten@sygel.es
 
 Maintainers
 -----------

@@ -1,0 +1,1 @@
+- Migration to upper versions requires refactoring. The module name must be changed. The code, and the names inside it should also be refactored.
