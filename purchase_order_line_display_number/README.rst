@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 ==================================
 Purchase Order Line Display Number
 ==================================
@@ -17,7 +13,7 @@ Purchase Order Line Display Number
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-sygel--technology%2Fsy--purchase--workflow-lightgray.png?logo=github
@@ -39,9 +35,9 @@ Configuration
 
 To configure this module, you need to:
 
-- Go to Settings > Technical > System Parameters >
-  purchase_order_line_display_number.number and introduce the number of
-  purchase order lines to be shown in the field "Value".
+-  Go to Settings > Technical > System Parameters >
+   purchase_order_line_display_number.number and introduce the number of
+   purchase order lines to be shown in the field "Value".
 
 Usage
 =====
@@ -52,14 +48,20 @@ To use this module, you need to:
 2. The number of purchase order lines displayed is limited to the limit
    set in the technical parameters.
 
+Known issues / Roadmap
+======================
+
+-  Migration to upper versions requires refactoring. The module name
+   must be changed. It should be tried to upload this module to OCA
+
 Changelog
 =========
 
 18.0.0.1.0 (2026-05-21)
 -----------------------
 
-- Since this version, you cannot set a 0 in the config parameter to have
-  an infinite display number. Set a high value instead
+-  Since this version, you cannot set a 0 in the config parameter to
+   have an infinite display number. Set a high value instead
 
 Bug Tracker
 ===========
@@ -82,12 +84,12 @@ Authors
 Contributors
 ------------
 
-- `Sygel <https://www.sygel.es>`__:
+-  `Sygel <https://www.sygel.es>`__:
 
-  - Manuel Regidor
-  - Alberto Martínez
-  - Valentin Vinagre
-  - Harald Panten
+   -  Manuel Regidor
+   -  Alberto Martínez
+   -  Valentin Vinagre
+   -  Harald Panten
 
 Other credits
 -------------

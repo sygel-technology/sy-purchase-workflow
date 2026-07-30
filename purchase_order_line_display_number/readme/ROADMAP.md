@@ -1,0 +1,1 @@
+- Migration to upper versions requires refactoring. The module name must be changed. It should be tried to upload this module to OCA
