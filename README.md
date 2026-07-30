@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[purchase_order_line_display_number](purchase_order_line_display_number/) | 18.0.1.0.0 |  | Configure the number of purchase order lines to be shown
+[purchase_order_line_display_number](purchase_order_line_display_number/) | 18.0.1.0.1 |  | Configure the number of purchase order lines to be shown
 [purchase_product_internal_reference](purchase_product_internal_reference/) | 18.0.1.0.0 |  | Display internal product reference in purchase orders
 
 [//]: # (end addons)

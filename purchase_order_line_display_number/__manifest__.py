@@ -4,7 +4,7 @@
 {
     "name": "Purchase Order Line Display Number",
     "summary": "Configure the number of purchase order lines to be shown",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "category": "Purchase",
     "website": "https://github.com/sygel-technology/sy-purchase-workflow",
     "author": "Sygel",
